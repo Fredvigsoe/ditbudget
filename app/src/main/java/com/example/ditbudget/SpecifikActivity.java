@@ -34,15 +34,25 @@ public class SpecifikActivity extends AppCompatActivity {
         String inputAsString7 = input7.getText().toString();
         String inputAsString8 = input8.getText().toString();
         String inputAsString9 = input9.getText().toString();
-        intentToOverviewActivity.putExtra("Husleje",inputAsString);
-        intentToOverviewActivity.putExtra("Mad",inputAsString2);
-        intentToOverviewActivity.putExtra("Forsikringer",inputAsString3);
-        intentToOverviewActivity.putExtra("Streamingtjenester",inputAsString4);
-        intentToOverviewActivity.putExtra("Mobilabonnement",inputAsString5);
-        intentToOverviewActivity.putExtra("Internet",inputAsString6);
-        intentToOverviewActivity.putExtra("Transport",inputAsString7);
-        intentToOverviewActivity.putExtra("Opsparing",inputAsString8);
-        intentToOverviewActivity.putExtra("Fagforening",inputAsString9);
+        int inputAsInt = Integer.parseInt(inputAsString);
+        int inputAsInt2 = Integer.parseInt(inputAsString2);
+        int inputAsInt3 = Integer.parseInt(inputAsString3);
+        int inputAsInt4 = Integer.parseInt(inputAsString4);
+        int inputAsInt5 = Integer.parseInt(inputAsString5);
+        int inputAsInt6 = Integer.parseInt(inputAsString6);
+        int inputAsInt7 = Integer.parseInt(inputAsString7);
+        int inputAsInt8 = Integer.parseInt(inputAsString8);
+        int inputAsInt9 = Integer.parseInt(inputAsString9);
+
+        intentToOverviewActivity.putExtra("Husleje",inputAsInt);
+        intentToOverviewActivity.putExtra("Mad",inputAsInt2);
+        intentToOverviewActivity.putExtra("Forsikringer",inputAsInt3);
+        intentToOverviewActivity.putExtra("Streamingtjenester",inputAsInt4);
+        intentToOverviewActivity.putExtra("Mobilabonnement",inputAsInt5);
+        intentToOverviewActivity.putExtra("Internet",inputAsInt6);
+        intentToOverviewActivity.putExtra("Transport",inputAsInt7);
+        intentToOverviewActivity.putExtra("Opsparing",inputAsInt8);
+        intentToOverviewActivity.putExtra("Fagforening",inputAsInt9);
         startActivity(intentToOverviewActivity);
     }
 }
