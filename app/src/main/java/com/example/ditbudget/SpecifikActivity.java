@@ -43,6 +43,7 @@ public class SpecifikActivity extends AppCompatActivity {
         int inputAsInt7 = Integer.parseInt(inputAsString7);
         int inputAsInt8 = Integer.parseInt(inputAsString8);
         int inputAsInt9 = Integer.parseInt(inputAsString9);
+        //a//
 
         intentToOverviewActivity.putExtra("Husleje",inputAsInt);
         intentToOverviewActivity.putExtra("Mad",inputAsInt2);
