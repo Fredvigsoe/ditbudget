@@ -27,6 +27,7 @@
         android:layout_marginEnd="108dp"
         android:layout_marginBottom="165dp"
         android:text="Simpel"
+        android:onClick="simpleActivity"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button2"
         app:layout_constraintStart_toStartOf="parent"

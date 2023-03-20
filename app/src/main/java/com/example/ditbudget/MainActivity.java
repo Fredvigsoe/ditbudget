@@ -18,4 +18,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intentToSpecifikActivity = new Intent(this, SpecifikActivity.class);
         startActivity(intentToSpecifikActivity);
     }
+
+    public void simpleActivity(View view){
+        Intent intentToSimpleActivity = new Intent(this, SimpelActivity.class);
+        startActivity(intentToSimpleActivity);
+    }
+
 }

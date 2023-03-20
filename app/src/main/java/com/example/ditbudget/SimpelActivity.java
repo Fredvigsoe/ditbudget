@@ -2,7 +2,10 @@ package com.example.ditbudget;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
 import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -19,12 +22,12 @@ public class SimpelActivity extends AppCompatActivity {
     Button calculateButton;
     TextView resultText;
 
-    @SuppressLint({"MissingInflatedId", "SetTextI18n"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_simpel2);
-
+    }
+    public void simpleActivity (View view) {
         suInput = findViewById(R.id.editTextTextPersonName2);
         salaryInput = findViewById(R.id.editTextTextPersonName3);
         rentInput = findViewById(R.id.editTextTextPersonName5);
@@ -44,7 +47,14 @@ public class SimpelActivity extends AppCompatActivity {
             double totalExpenses = rent + food + other;
 
             double result = totalIncome - totalExpenses;
-            resultText.setText(Double.toString(result));
+            resultText.setText(resultText.toString());
+
+            // Create an Intent and add the result as an extra
+            Intent resultIntent = new Intent(this, OverblikActivity.class);
+            resultIntent.putExtra("RESULT", result);
+
+            startActivity(resultIntent);
         });
+
     }
 }
