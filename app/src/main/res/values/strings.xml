@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">DitBudget</string>
+    <string name="result">Result</string>
 </resources>
