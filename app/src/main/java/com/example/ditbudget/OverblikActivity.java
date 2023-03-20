@@ -2,7 +2,10 @@ package com.example.ditbudget;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
 
 public class OverblikActivity extends AppCompatActivity {
 
@@ -10,5 +13,9 @@ public class OverblikActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_overblik);
+
+        Intent intent = getIntent();
+        int budget;
     }
+
 }

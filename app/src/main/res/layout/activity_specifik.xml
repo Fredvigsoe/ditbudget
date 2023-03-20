@@ -17,13 +17,13 @@
         android:ems="10"
         android:hint="Husleje og aconto"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/editTextNumber2"
+        app:layout_constraintBottom_toTopOf="@+id/budgetNumber"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextNumber2"
+        android:id="@+id/budgetNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="89dp"
@@ -48,7 +48,7 @@
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
+        app:layout_constraintTop_toBottomOf="@+id/budgetNumber" />
 
     <EditText
         android:id="@+id/editTextNumber4"

@@ -17,7 +17,7 @@ public class SpecifikActivity extends AppCompatActivity {
     public void overviewActivity(View view){
         Intent intentToOverviewActivity = new Intent(this, SimpelActivity.class);
         EditText input = findViewById(R.id.editTextNumber);
-        EditText input2 = findViewById(R.id.editTextNumber2);
+        EditText input2 = findViewById(R.id.budgetNumber);
         EditText input3 = findViewById(R.id.editTextNumber3);
         EditText input4 = findViewById(R.id.editTextNumber4);
         EditText input5 = findViewById(R.id.editTextNumber5);

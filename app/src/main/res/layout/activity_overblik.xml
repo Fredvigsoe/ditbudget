@@ -6,4 +6,128 @@
     android:layout_height="match_parent"
     tools:context=".OverblikActivity">
 
+    <TextView
+        android:id="@+id/overblik"
+        android:layout_width="128dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginBottom="674dp"
+        android:gravity="center"
+        android:text="Overblik"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.69"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/anbefaling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="300dp"
+        android:gravity="center"
+        android:text="Vores Skræddersyede Anbefalinger"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/overblik"
+        app:layout_constraintVertical_bias="0.537" />
+
+    <TextView
+        android:id="@+id/raadighed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="176dp"
+        android:text="Dit Månedlige Rådighedsbeløb:"
+        app:layout_constraintBottom_toTopOf="@+id/anbefaling"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.588"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/overblik"
+        app:layout_constraintVertical_bias="0.533" />
+
+    <EditText
+        android:id="@+id/budgetNumber"
+        android:layout_width="197dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="101dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/anbefaling"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/raadighed" />
+
+    <TextView
+        android:id="@+id/tip1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="190dp"
+        android:layout_marginBottom="25dp"
+        android:text="Tip 1"
+        app:layout_constraintBottom_toTopOf="@+id/tip2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/anbefaling" />
+
+    <TextView
+        android:id="@+id/tip2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="190dp"
+        android:layout_marginBottom="24dp"
+        android:text="Tip 2"
+        app:layout_constraintBottom_toTopOf="@+id/tip3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tip1" />
+
+    <TextView
+        android:id="@+id/tip3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="190dp"
+        android:layout_marginBottom="29dp"
+        android:text="Tip 3"
+        app:layout_constraintBottom_toTopOf="@+id/tip4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tip2" />
+
+    <TextView
+        android:id="@+id/tip4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="190dp"
+        android:layout_marginBottom="186dp"
+        android:text="Tip 4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tip3" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
